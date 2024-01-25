@@ -13,9 +13,14 @@
     color: var(--main-color);
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -56,6 +61,55 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+
+/****** Header ***********/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.header .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 68px;
+    padding: 0;
+}
+
+
+
+.header .navigation a{
+    position: relative;
+}
+
+.header .navigation a:hover {
+    color: var(--main-color); 
+    transition: all ease-in-out .2s;  
+}
+
+/*.selected {
+    color: var(--main-color);
+}
+
+.selected::after{
+    width: 100%!important;
+}*/
+
+.header .navigation a::after, .selected::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    top:-10px;
+    left: 0px;
+    background-color:var(--main-color);
+    transition: all ease-in-out .2s;
+}
+.header .navigation a:hover::after{
+    width: 100%;
 }
 
 /****** Hebergements And Populaires ***********/
