@@ -13,6 +13,14 @@
     color: var(--main-color);
 }
 
+.fa-location-dot {
+    color: black;
+}
+
+.fa-magnifying-glass {
+    color: white;
+}
+
 html, body {
     scroll-behavior: smooth;
 }
@@ -63,6 +71,10 @@ a {
     color: var(--main-bg-color)
 }
 
+input:focus{
+    outline: none;
+}
+
 
 /****** Header ***********/
 .header {
@@ -110,6 +122,66 @@ a {
 }
 .header .navigation a:hover::after{
     width: 100%;
+}
+
+/****** Search form ***********/
+.search {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.search .search-icon{
+    display: block;
+    height: 49px;
+    width: 50px;
+    background-color: var(--main-bg-color);
+    border-top: solid 1px var(--main-bg-color);
+    border-bottom: solid 1px var(--main-bg-color);
+    border-radius: 15px 0px 0px 15px;
+    position: relative;
+}
+
+.search .fa-location-dot {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+.search input, .search .btn-search {
+    margin: 0;
+    padding: 13px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.search input::placeholder {
+    font-weight: 200;
+}
+
+.search input[type=text] {
+    width: 195px;
+    border-top: solid 1px var(--main-bg-color);
+    border-bottom: solid 1px var(--main-bg-color);
+}
+
+.search .btn-search {
+    cursor: pointer;
+    color: white;
+    background-color: var(--main-color);
+    border-top: solid 1px var(--main-color);
+    border-bottom: solid 1px var(--main-color);
+    border-radius: 0px 15px 15px 0px;
+}
+
+.btn-search .fa-magnifying-glass {
+    display: none;
+    visibility: hidden;
+}
+
+.search .btn-search:hover {
+    filter: brightness(0.9);
 }
 
 /****** Hebergements And Populaires ***********/
@@ -310,4 +382,16 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    .btn-search .fa-magnifying-glass {
+        display:inline;
+        visibility: visible;
+    }
+
+    .btn-search span {
+        display: none;
+        visibility: hidden;
+    }
+
+
 }
