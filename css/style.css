@@ -137,12 +137,12 @@ a {
 }
 
 .hebergements-cards a {
-    width: calc(33.33% - 20px);  
+    width: calc(33.33% - 20px);
+    margin-top: 33px;
 }
 
 .hebergements-cards .card {
-    display: flex;
-    margin-top: 33px;
+    display: flex; 
     flex-direction: column;
 }
 
