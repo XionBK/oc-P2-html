@@ -161,7 +161,7 @@ a {
     margin-top: 30px;
 }
 .hebergements-footer a {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -242,6 +242,30 @@ a {
     padding-left: 20px;
 }
 
+/****** Footer ***********/
+.footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+}
+
+.footer .footer-content {
+    width: 33.33%;
+    padding: 20px;
+}
+
+.footer .footer-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 
 
