@@ -29,14 +29,50 @@
             <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             <form action="#search" method="post" class="search">
-                <span class="search-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                </span>
-                <input type="text" name="city" placeholder="Où allez vous ?">
-                <button type="submit" class="btn-search">
-                    <i class="fa-solid fa-magnifying-glass"></i> <span>Rechercher</span>
-                </button>
+                <section>
+                    <span class="search-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <input type="text" name="city" placeholder="Où allez vous ?">
+                    <button type="submit" class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i> <span>Rechercher</span>
+                    </button>
+                </section>
+                <section class="filter">
+                    <h2 class="filter-title">Filtres</h2>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="categories" id="economy">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                <span>Économique</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="categories" id="family">
+                                <i class="fa-solid fa-person"></i>
+                                <span>Familial</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="categories" id="heart">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>Romantique</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="categories" id="tops">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>Nos pépites</span>
+                            </label>
+                        </li>
+                    </ul>
+                </section>
             </form>
+            <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
             <div class="hebergements-and-populaires" id="hebergements">
                 <section class="hebergements">
                     <div class="hebergements-title">
