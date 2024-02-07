@@ -149,7 +149,7 @@ input:focus{
 
 
 /****** Search form ***********/
-.search section {
+.search div {
     display: flex;
     align-items: center;
 }
